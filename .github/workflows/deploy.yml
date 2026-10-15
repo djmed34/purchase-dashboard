@@ -1,0 +1,67 @@
+# royalnco 조직 Private 저장소 → GitHub Pages 배포
+# 원본 xlsx → 집계 JSON(Python) → Next.js 정적 빌드 → Pages
+# ⚠️ 사내 기밀 데이터: 저장소 Settings > Pages 에서 Visibility 를 Private(조직 구성원 한정)으로 설정할 것
+name: Deploy dashboard
+
+on:
+  push:
+    branches: [main]
+    paths: ["data/**", "app/**", "components/**", "lib/**", "scripts/**", "package*.json", "next.config.ts", ".github/workflows/deploy.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: 집계 데이터 생성·암호화 (원본 합계 검증 실패 시 중단)
+        run: |
+          pip install -r scripts/requirements.txt
+          python scripts/build_data.py
+        env:
+          # 로그인 계정 — Settings > Secrets and variables > Actions 에 등록 (아이디:비밀번호;…)
+          DASHBOARD_USERS: ${{ secrets.DASHBOARD_USERS }}
+      - name: 평문 데이터 미포함 확인
+        run: test ! -e public/data/purchase.json && test ! -e public/data/meta.json && test -s public/data/secure.json
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/configure-pages@v5
+        id: pages
+      - name: 정적 빌드
+        run: |
+          npm ci
+          npm run build
+        env:
+          # 프로젝트 사이트(royalnco.github.io/<repo>)는 basePath 필요, 커스텀 도메인이면 빈 값
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,33 @@
+# dependencies / build output
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# secrets
+.env
+.env.*
+!.env.example
+# 평문 집계(로컬 개발 --no-auth 산출물) — 게시 금지
+public/data/purchase.json
+public/data/meta.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+credentials.json
+serviceAccount*.json
+
+# logs / temp
+*.log
+npm-debug.log*
+*.tmp
+~$*.xlsx
+.DS_Store

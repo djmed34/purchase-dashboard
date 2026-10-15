@@ -1,0 +1,15 @@
+{
+  "version": "v1",
+  "categoryShareThreshold": 0.5,
+  "singleSourceShareThreshold": 0.3,
+  "trendYears": 3,
+  "trendMinShare": 0.2,
+  "weights": { "categoryShare": 0.5, "singleSourceShare": 0.3, "trend": 0.2 },
+  "highDependencyMinCriteria": 2,
+  "rankingMinAmount": 100000000,
+  "insight": {
+    "yoyAnomaly": 0.3,
+    "yoyAnomalyMinAmount": 100000000,
+    "alternativeMaxShare": 0.1
+  }
+}

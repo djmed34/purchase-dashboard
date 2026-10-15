@@ -1,0 +1,85 @@
+scheme,prefix,l1,l2,note
+alpha,RB,완제품,비데,
+alpha,RWC,완제품,비데,도기일체형비데
+alpha,AS,완제품,비데,비데 A/S 부품
+alpha,N,완제품,비데,비데 A/S 뭉치
+alpha,ASW,완제품,비데,비데 명판
+alpha,JHP,완제품,비데,
+alpha,RBS,완제품,수전·샤워,선반샤워
+alpha,RFV,완제품,수전·샤워,앵글밸브·세탁기수전
+alpha,RLS,완제품,수전·샤워,세면기수전
+alpha,RKS,완제품,수전·샤워,싱크수전
+alpha,RKST,완제품,수전·샤워,
+alpha,RLE,완제품,수전·샤워,자동수전
+alpha,YG,완제품,수전·샤워,
+alpha,JCL,완제품,수전·샤워,
+alpha,H,완제품,수전·샤워,
+alpha,SCC,완제품,수전·샤워,
+alpha,KJ,완제품,수전·샤워,
+alpha,DSF,완제품,수전·샤워,
+alpha,HS,완제품,수전·샤워,
+alpha,RLP,완제품,위생도기 부속,트랩·폽업
+alpha,RCL,완제품,위생도기 부속,양변기 부속
+alpha,RCP,완제품,위생도기 부속,후렌지·스퍼드
+alpha,RWP,완제품,위생도기 부속,페데스탈
+alpha,RUP,완제품,위생도기 부속,
+alpha,RED,완제품,위생도기 부속,
+alpha,VO,완제품,위생도기 부속,
+alpha,RS,완제품,양변기 시트,
+alpha,RUE,완제품,소변기·대변기 세정,
+alpha,RCF,완제품,소변기·대변기 세정,
+alpha,RCE,완제품,소변기·대변기 세정,
+alpha,SW,완제품,소변기·대변기 세정,
+alpha,SWA,완제품,소변기·대변기 세정,
+alpha,BF,완제품,소변기·대변기 세정,
+alpha,EL,완제품,소변기·대변기 세정,
+alpha,JW,완제품,소변기·대변기 세정,
+alpha,RA,완제품,욕실 액세서리,
+alpha,RSP,완제품,욕실 액세서리,손잡이
+alpha,YE,완제품,욕실 액세서리,
+alpha,DS,완제품,욕실 액세서리,
+alpha,YC,완제품,욕실 인테리어,천장재
+alpha,YM,완제품,욕실 인테리어,거울장
+alpha,YF,완제품,욕실 인테리어,환풍기
+alpha,YD,완제품,욕실 인테리어,
+alpha,YB,완제품,욕실 인테리어,욕조
+alpha,YT,완제품,욕실 인테리어,타일
+alpha,YA,완제품,욕실 인테리어,
+alpha,YP,완제품,욕실 인테리어,
+alpha,YL,완제품,욕실 인테리어,
+alpha,CM,완제품,욕실 인테리어,
+alpha,RPP,완제품,욕실 인테리어,
+alpha,RFC,완제품,욕실 인테리어,
+alpha,RFM,완제품,욕실 인테리어,
+alpha,RFS,완제품,욕실 인테리어,
+alpha,B,완제품,포장재,
+alpha,M,완제품,기타,
+alpha,W,완제품,기타,
+alpha,NAK,완제품,기타,
+alpha,NAX,완제품,기타,
+alpha,NAF,완제품,기타,
+numeric,92,부품,카트리지·밸브,
+numeric,15,부품,카트리지·밸브,
+numeric,94,부품,전장(컨트롤러·센서·모터),
+numeric,96,부품,전장(컨트롤러·센서·모터),
+numeric,74,부품,호스,
+numeric,11,부품,수전 몸통·샹크·편심,
+numeric,12,부품,수전 몸통·샹크·편심,
+numeric,13,부품,수전 몸통·샹크·편심,
+numeric,14,부품,수전 몸통·샹크·편심,
+numeric,91,부품,헤드·외장 부품,
+numeric,67,부품,헤드·외장 부품,
+numeric,93,부품,헤드·외장 부품,
+numeric,71,부품,헤드·외장 부품,
+numeric,23,부품,헤드·외장 부품,
+numeric,32,부품,핸들,
+numeric,33,부품,핸들,
+numeric,81,부품,소모성 체결 부품,
+numeric,22,부품,소모성 체결 부품,
+numeric,21,부품,소모성 체결 부품,
+numeric,64,부품,소모성 체결 부품,
+numeric,61,부품,소모성 체결 부품,
+numeric,85,부품,소모성 체결 부품,
+numeric,45,부품,소모성 체결 부품,
+numeric,41,부품,소모성 체결 부품,
+numeric,02,부품,포장재(부품),
