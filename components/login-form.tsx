@@ -62,7 +62,7 @@ export default function LoginForm() {
               <path d="M8 11V7a4 4 0 0 1 8 0v4" />
             </svg>
           </div>
-          <h1 className="text-lg font-semibold">협력사 의존도 대시보드</h1>
+          <h1 className="text-lg font-semibold">협력사 의존도</h1>
           <p className="mt-1 text-[13px] text-muted-foreground">
             사내 기밀 정보입니다. 승인된 사용자만 로그인할 수 있습니다.
           </p>

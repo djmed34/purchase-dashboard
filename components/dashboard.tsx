@@ -140,7 +140,7 @@ function Loaded({
     <div className="mx-auto max-w-[1400px] px-4 pb-16 sm:px-6">
       <header className="flex flex-wrap items-end justify-between gap-3 border-b py-5">
         <div>
-          <h1 className="text-xl font-semibold">협력사 의존도 대시보드</h1>
+          <h1 className="text-xl font-semibold">협력사 의존도</h1>
           <p className="text-[13px] text-muted-foreground">
             5년간 매입현황 기반 이원화(대체 업체 발굴) 검토 · 분석용
           </p>
